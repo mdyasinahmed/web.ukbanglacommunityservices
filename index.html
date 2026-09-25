@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ইউকে বাংলা কমিউনিটি সার্ভিসেস | UK Bangla Community Services</title>
+<meta name="description" content="যুক্তরাজ্যে বসবাসরত প্রবাসী বাংলাদেশিদের জন্য ভিসা, ইমিগ্রেশন, বেনিফিট ও আইনি কাগজপত্রের প্রিমিয়াম ও নির্ভরযোগ্য সমাধান।">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- CSS Libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+  :root{
+    /* UK-Bangladesh High-Light Theme Palette (Derived from Poster & Modern UI) */
+    --c-navy-dark: #071527;
+    --c-royal-blue: #113463;
+    --c-bd-green: #006A4E;
+    --c-bd-green-light: #058866;
+    --c-crimson: #E02424;
+    --c-gold: #F59E0B;
+    --c-gold-hover: #D97706;
+    --c-cream-soft: #FBF9F4;
+    
+    /* Surface & Light Shades */
+    --surface-light: #F8FAFD;
+    --surface-white: #FFFFFF;
+    --text-heading: #09192E;
+    --text-body: #475569;
+    --border-subtle: rgba(17, 52, 99, 0.08);
+    --border-card: #E2E8F0;
+
+    /* Shadows & Radius */
+    --shadow-sm: 0 4px 14px rgba(11, 25, 44, 0.05);
+    --shadow-md: 0 10px 25px -5px rgba(11, 25, 44, 0.08);
+    --shadow-lg: 0 20px 35px -8px rgba(0, 106, 78, 0.16);
+    --radius-pill: 999px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --ease-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+  }
+  
+  *, *::before, *::after{
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: 0;
+    background-color: var(--surface-light);
+    color: var(--text-body);
+    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5{
+    color: var(--text-heading);
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+    transition: var(--ease-smooth);
+  }
+
+  .container-custom{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ===== Keyframe / UI Highlight Badges (Uploaded UI Theme) ===== */
+  .badge-keyword{
+    display: inline-block;
+    background: linear-gradient(135deg, var(--c-royal-blue), var(--c-bd-green));
+    color: #FFFFFF !important;
+    padding: 3px 16px;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 14px rgba(0, 106, 78, 0.25);
+    vertical-align: middle;
+  }
+  .badge-keyword.red{
+    background: linear-gradient(135deg, var(--c-crimson), #B91C1C);
+    box-shadow: 0 4px 14px rgba(224, 36, 36, 0.25);
+  }
+  .badge-keyword.gold{
+    background: linear-gradient(135deg, var(--c-gold), #B45309);
+    color: #071527 !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.3);
+  }
+
+  /* Top British-Bangla Ribbon */
+  .top-flag-ribbon{
+    height: 4px;
+    background: linear-gradient(90deg, var(--c-royal-blue) 0% 36%, var(--c-crimson) 36% 40%, #FFFFFF 40% 41%, var(--c-bd-green) 41% 94%, var(--c-gold) 94% 100%);
+  }
+
+  /* ===== Site Header ===== */
+  header.site-header{
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  .site-brand{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-logo-icon{
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--c-royal-blue), var(--c-bd-green));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.3rem;
+    box-shadow: 0 6px 16px rgba(0, 106, 78, 0.22);
+  }
+  .brand-title{
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    color: var(--c-navy-dark);
+  }
+  .brand-sub{
+    font-size: 0.74rem;
+    color: var(--c-bd-green);
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+  .desktop-menu{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .desktop-menu a{
+    color: var(--text-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  .desktop-menu a:hover{
+    color: var(--c-bd-green);
+    background: rgba(0, 106, 78, 0.06);
+  }
+  .header-call-pill{
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    color: #92400E;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.92rem;
+  }
+  .header-call-pill:hover{
+    background: var(--c-gold);
+    color: var(--c-navy-dark);
+  }
+  .menu-btn-mobile{
+    border: 1px solid var(--border-card);
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--c-navy-dark);
+  }
+
+  /* ===== Hero Section with UI Framing ===== */
+  .hero-block{
+    position: relative;
+    background: radial-gradient(circle at 92% 10%, rgba(0, 106, 78, 0.28), transparent 45%),
+                radial-gradient(circle at 10% 85%, rgba(224, 36, 36, 0.12), transparent 40%),
+                linear-gradient(135deg, var(--c-navy-dark) 0%, #0E274A 50%, #082E26 100%);
+    color: #fff;
+    padding: 75px 0 115px;
+    overflow: hidden;
+  }
+  .hero-grid{
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-welcome-tag{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FEF3C7;
+    padding: 6px 18px;
+    border-radius: var(--radius-pill);
+    font-size: 0.86rem;
+    font-weight: 600;
+    margin-bottom: 22px;
+  }
+  .hero-main-title{
+    color: #fff;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  .hero-desc{
+    color: #CBD5E1;
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin-bottom: 35px;
+    max-width: 580px;
+  }
+  .hero-cta-btns{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+  .btn-gold-action{
+    background: var(--c-gold);
+    color: var(--c-navy-dark);
+    font-weight: 700;
+    padding: 13px 30px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 22px rgba(245, 158, 11, 0.35);
+  }
+  .btn-gold-action:hover{
+    background: #FBBF24;
+    color: var(--c-navy-dark);
+    transform: translateY(-2px);
+  }
+  .btn-outline-action{
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-weight: 600;
+    padding: 13px 26px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-outline-action:hover{
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+  }
+
+  /* Hero Frame & Graphic Card (Poster Infused) */
+  .hero-visual-card{
+    position: relative;
+    background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+  }
+  .hero-visual-card::after{
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: rgba(224, 36, 36, 0.2);
+    border-radius: 50%;
+    bottom: -30px;
+    right: -30px;
+    filter: blur(35px);
+  }
+  .poster-badge-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .poster-badge-item{
+    background: rgba(0, 106, 78, 0.3);
+    border: 1px solid rgba(52, 211, 153, 0.35);
+    color: #6EE7B7;
+    padding: 6px 14px;
+    border-radius: var(--radius-pill);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+  .floating-stat-card{
+    background: #FFFFFF;
+    color: var(--c-navy-dark);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+  }
+  .stat-icon-wrap{
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(0, 106, 78, 0.1);
+    color: var(--c-bd-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+  }
+  .stat-icon-wrap.gold{
+    background: rgba(245, 158, 11, 0.12);
+    color: var(--c-gold);
+  }
+  .stat-details h4{
+    margin: 0;
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--c-navy-dark);
+  }
+  .stat-details span{
+    font-size: 0.85rem;
+    color: var(--text-body);
+  }
+
+  /* Section Wavy Bottom Cut */
+  .wave-divider{
+    position: relative;
+    margin-top: -60px;
+    z-index: 3;
+  }
+  .wave-divider svg{
+    display: block;
+    width: 100%;
+    height: 60px;
+  }
+
+  /* ===== 3 Core Feature Ribbon (Uploaded UI Style) ===== */
+  .features-strip-section{
+    padding: 20px 0 60px;
+  }
+  .feature-strip-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .feature-strip-box{
+    background: var(--surface-white);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-md);
+    padding: 26px 22px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: var(--ease-smooth);
+  }
+  .feature-strip-box:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 106, 78, 0.3);
+  }
+  .feature-strip-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(17, 52, 99, 0.08), rgba(0, 106, 78, 0.12));
+    color: var(--c-royal-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+  }
+  .feature-strip-box h4{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+  .feature-strip-box p{
+    color: var(--text-body);
+    font-size: 0.92rem;
+    margin: 0;
+  }
+
+  /* ===== Section Header Common ===== */
+  .section-pad{
+    padding: 75px 0;
+  }
+  .center-header{
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 45px;
+  }
+  .section-kicker{
+    font-size: 0.86rem;
+    font-weight: 700;
+    color: var(--c-bd-green);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  .section-main-heading{
+    font-size: clamp(1.8rem, 3.2vw, 2.45rem);
+    margin-bottom: 12px;
+  }
+  .section-subtext{
+    color: var(--text-body);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  /* ===== SERVICES: DYNAMIC LIST FORMAT (User Requirement) ===== */
+  .services-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .service-list-item{
+    background: var(--surface-white);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-md);
+    transition: var(--ease-smooth);
+    overflow: hidden;
+  }
+  .service-list-item:hover{
+    border-color: rgba(0, 106, 78, 0.35);
+    box-shadow: var(--shadow-md);
+  }
+  .service-list-item.active{
+    border-color: var(--c-bd-green);
+    box-shadow: 0 12px 30px rgba(0, 106, 78, 0.12);
+  }
+  .service-item-summary{
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .summary-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+  }
+  .svc-badge-icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--c-royal-blue), var(--c-navy-dark));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  .service-list-item:nth-child(2n) .svc-badge-icon{
+    background: linear-gradient(135deg, var(--c-bd-green), #034D39);
+  }
+  .service-list-item:nth-child(3n) .svc-badge-icon{
+    background: linear-gradient(135deg, #B45309, var(--c-gold));
+  }
+  .svc-text-head h3{
+    font-size: 1.18rem;
+    margin: 0 0 4px 0;
+  }
+  .svc-text-head p{
+    margin: 0;
+    color: var(--text-body);
+    font-size: 0.94rem;
+  }
+  .summary-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .status-tag{
+    background: rgba(0, 106, 78, 0.08);
+    color: var(--c-bd-green);
+    font-weight: 700;
+    font-size: 0.84rem;
+    padding: 4px 14px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+  }
+  .arrow-toggle-btn{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #F1F5F9;
+    color: var(--c-navy-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease;
+  }
+  .service-list-item.active .arrow-toggle-btn{
+    transform: rotate(180deg);
+    background: var(--c-bd-green);
+    color: #fff;
+  }
+
+  /* Expandable Dynamic Drawer */
+  .service-item-drawer{
+    display: none;
+    padding: 0 26px 26px 26px;
+    border-top: 1px dashed var(--border-card);
+    background: #FAFCFE;
+  }
+  .service-list-item.active .service-item-drawer{
+    display: block;
+  }
+  .drawer-grid{
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 30px;
+    padding-top: 20px;
+    align-items: center;
+  }
+  .drawer-points h5{
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: var(--c-royal-blue);
+  }
+  .drawer-points ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .drawer-points ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    margin-bottom: 8px;
+    color: var(--text-heading);
+  }
+  .drawer-points ul li i{
+    color: var(--c-bd-green);
+    font-size: 0.9rem;
+  }
+  .drawer-cta-panel{
+    background: #FFFFFF;
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    padding: 18px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+  .btn-list-wa{
+    background: #25D366;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+  .btn-list-wa:hover{
+    background: #1EBE5D;
+    color: #fff;
+  }
+
+  /* ===== About / Why Us Section (Uploaded UI Style) ===== */
+  .about-ui-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .metric-ring-row{
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .metric-circle-item{
+    background: #fff;
+    border: 1px solid var(--border-card);
+    border-radius: 16px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: var(--shadow-sm);
+    flex: 1;
+  }
+  .circle-percent{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--c-royal-blue);
+    line-height: 1;
+  }
+  .circle-percent.green{
+    color: var(--c-bd-green);
+  }
+
+  /* ===== Contact Form with WhatsApp Integration ===== */
+  .contact-wrapper-card{
+    background: linear-gradient(145deg, var(--c-navy-dark) 0%, #0C213D 60%, #063428 100%);
+    border-radius: var(--radius-lg);
+    padding: 50px 40px;
+    color: #fff;
+    box-shadow: 0 25px 60px rgba(7, 21, 39, 0.25);
+  }
+  .contact-layout-split{
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 30px;
+  }
+  .wa-panel-box{
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px 28px;
+    color: var(--c-navy-dark);
+  }
+  .wa-panel-box h3{
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .form-group-item{
+    margin-bottom: 16px;
+  }
+  .form-group-item label{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    display: block;
+    color: var(--c-navy-dark);
+  }
+  .form-group-item .form-control,
+  .form-group-item .form-select{
+    font-size: 16px; /* iOS zoom prevention */
+    border: 1.5px solid #CBD5E1;
+    border-radius: 10px;
+    padding: 10px 14px;
+  }
+  .form-group-item .form-control:focus,
+  .form-group-item .form-select:focus{
+    border-color: var(--c-bd-green);
+    box-shadow: 0 0 0 3px rgba(0, 106, 78, 0.15);
+  }
+  .btn-submit-main-wa{
+    background: #25D366;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+  }
+  .btn-submit-main-wa:hover{
+    background: #1EBE5D;
+    color: #fff;
+  }
+
+  .direct-info-card{
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+    backdrop-filter: blur(8px);
+  }
+  .direct-info-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: rgba(245, 158, 11, 0.18);
+    color: var(--c-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+  }
+  .direct-info-text h5{
+    color: #94A3B8;
+    font-size: 0.82rem;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+  }
+  .direct-info-text a, .direct-info-text span{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* ===== Footer ===== */
+  footer.site-footer{
+    background: #040D18;
+    color: #94A3B8;
+    padding: 55px 0 25px;
+    font-size: 0.92rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .footer-grid-layout{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 35px;
+  }
+  .footer-grid-layout h4{
+    color: #fff;
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+  }
+  .footer-grid-layout ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-grid-layout ul li{
+    margin-bottom: 10px;
+  }
+  .footer-grid-layout ul li a:hover{
+    color: #fff;
+  }
+
+  /* ===== Floating WhatsApp Trigger ===== */
+  .wa-floating-trigger{
+    position: fixed;
+    right: 20px;
+    bottom: 22px;
+    z-index: 1030;
+    background: #25D366;
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    transition: transform 0.2s ease;
+  }
+  .wa-floating-trigger:hover{
+    color: #fff;
+    transform: scale(1.08);
+  }
+
+  /* ===== Responsive Fixes ===== */
+  @media (max-width: 991px){
+    .desktop-menu{ display: none; }
+    .hero-grid{ grid-template-columns: 1fr; }
+    .feature-strip-grid{ grid-template-columns: 1fr; }
+    .about-ui-grid{ grid-template-columns: 1fr; }
+    .contact-layout-split{ grid-template-columns: 1fr; }
+    .footer-grid-layout{ grid-template-columns: 1fr 1fr; }
+    .drawer-grid{ grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 600px){
+    .section-pad{ padding: 50px 0; }
+    .contact-wrapper-card{ padding: 30px 18px; }
+    .service-item-summary{ padding: 18px 16px; flex-direction: column; align-items: flex-start; }
+    .summary-right{ width: 100%; justify-content: space-between; margin-top: 10px; }
+    .footer-grid-layout{ grid-template-columns: 1fr; }
+    .metric-ring-row{ flex-direction: column; }
+    .hero-block{ padding: 55px 0 95px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Flag Accent Ribbon -->
+<div class="top-flag-ribbon"></div>
+
+<!-- ===== Site Header ===== -->
+<header class="site-header">
+  <div class="container-custom">
+    <div class="navbar-container">
+      <a href="#home" class="site-brand">
+        <div class="brand-logo-icon">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div>
+          <h1 class="brand-title">ইউকে বাংলা কমিউনিটি সার্ভিসেস</h1>
+          <span class="brand-sub">UK BANGLA COMMUNITY SERVICES</span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="desktop-menu">
+        <a href="#home">হোম</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#services">সেবাসমূহ</a>
+        <a href="#whyus">কেন আমরা</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+
+      <!-- Call / Contact Pill -->
+      <div class="d-none d-md-block">
+        <a href="tel:+447885561722" class="header-call-pill">
+          <i class="fa-solid fa-phone-volume text-danger"></i> 07885 561722
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-btn-mobile d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-label="মেনু খুলুন">
+        <i class="fa-solid fa-bars-staggered fa-lg"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileNavDrawer">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title fw-bold" style="color:var(--c-navy-dark);">মেনু</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="বন্ধ করুন"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column justify-content-between p-4">
+    <ul class="list-unstyled d-flex flex-column gap-3 fs-5">
+      <li><a href="#home" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block">হোম</a></li>
+      <li><a href="#about" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block">আমাদের সম্পর্কে</a></li>
+      <li><a href="#services" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block">সেবাসমূহ (তালিকা)</a></li>
+      <li><a href="#whyus" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block">কেন আমাদের বেছে নেবেন</a></li>
+      <li><a href="#contact" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block">যোগাযোগ ও ঠিকানা</a></li>
+    </ul>
+
+    <div class="pt-3 border-top">
+      <a href="https://wa.me/447885561722" target="_blank" rel="noopener" class="btn-submit-main-wa text-decoration-none">
+        <i class="fa-brands fa-whatsapp"></i> সরাসরি হোয়াটসঅ্যাপ করুন
+      </a>
+      <div class="text-center mt-3 text-muted small">
+        অফিস: Greenfield Road, London, E1 1EJ
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Hero Section ===== -->
+<section class="hero-block" id="home">
+  <div class="container-custom">
+    <div class="hero-grid">
+      <!-- Left Content -->
+      <div>
+        <div class="hero-welcome-tag">
+          <i class="fa-solid fa-landmark-flag"></i> লন্ডন ও যুক্তরাজ্য প্রবাসীদের বিশ্বস্ত সঙ্গী
+        </div>
+        <h2 class="hero-main-title">
+          যুক্তরাজ্যে আপনার <span class="badge-keyword">আইনি</span> ও <span class="badge-keyword red">ইমিগ্রেশন</span> সাপোর্ট
+        </h2>
+        <p class="hero-desc">
+          ভিসা জটিলতা, বেনিফিট সাপোর্ট, বাংলাদেশে জমিজমার পাওয়ার অব অ্যাটর্নি কিংবা অফিসিয়াল ইউকে সার্টিফাইড ট্রান্সলেশন—আমাদের অভিজ্ঞ টিম সম্পূর্ণ বাংলায় আপনাকে দেবে নিখুঁত ও দ্রুত সমাধান।
+        </p>
+        
+        <div class="hero-cta-btns">
+          <a href="#contact" class="btn-gold-action">
+            <i class="fa-brands fa-whatsapp fa-lg"></i> ফ্রি পরামর্শ নিন
+          </a>
+          <a href="#services" class="btn-outline-action">
+            <i class="fa-solid fa-arrow-down-short-wide"></i> সেবাসমূহ দেখুন
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 text-white-50 small">
+          <i class="fa-solid fa-circle-check text-success"></i> হোম অফিস গাইডলাইন সম্মত
+          <span class="opacity-25">|</span>
+          <i class="fa-solid fa-shield-halved text-warning"></i> শতভাগ তথ্য গোপনীয়তা
+        </div>
+      </div>
+
+      <!-- Right Visual Card (Framed Theme) -->
+      <div>
+        <div class="hero-visual-card">
+          <div class="poster-badge-row">
+            <span class="poster-badge-item"><i class="fa-solid fa-bridge-water me-1"></i> London E1 1EJ</span>
+            <span class="badge-keyword gold" style="font-size:0.75rem;">UK-BANGLADESH</span>
+          </div>
+
+          <!-- Floating Stat 1 -->
+          <div class="floating-stat-card">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-users-viewfinder"></i>
+            </div>
+            <div class="stat-details">
+              <h4>১,২০০+</h4>
+              <span>সফলভাবে উপকৃত পরিবার</span>
+            </div>
+          </div>
+
+          <!-- Floating Stat 2 -->
+          <div class="floating-stat-card">
+            <div class="stat-icon-wrap gold">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="stat-details">
+              <h4>১২+ বছর</h4>
+              <span>কমিউনিটি ও আইনি সেবার অভিজ্ঞতা</span>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-3" style="background: rgba(255,255,255,0.06); border: 1px dashed rgba(255,255,255,0.2);">
+            <div class="d-flex align-items-center gap-3">
+              <div class="text-warning fs-3"><i class="fa-solid fa-file-circle-check"></i></div>
+              <div class="small text-white">
+                <strong>UK Certified Translation:</strong> নিকাহনামা, জন্মসনদ ও আদালতের কাগজপত্রের দ্রুত অনুবাদ।
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wavy Transition -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none">
+    <path d="M0,0 C360,50 1080,50 1440,0 L1440,60 L0,60 Z" fill="#F8FAFD"></path>
+  </svg>
+</div>
+
+<!-- ===== 3 Core Feature Ribbon Strip ===== -->
+<div class="features-strip-section" id="about">
+  <div class="container-custom">
+    <div class="feature-strip-grid">
+      <div class="feature-strip-box">
+        <div class="feature-strip-icon"><i class="fa-solid fa-headset"></i></div>
+        <div>
+          <h4>সহজ বাংলা ভাষায় যোগাযোগ</h4>
+          <p>ইংরেজি জটিলতার ভয় ছাড়াই আপনার পারিবারিক ও আইনি প্রয়োজন মাতৃভাষায় গুছিয়ে সমাধান করুন।</p>
+        </div>
+      </div>
+
+      <div class="feature-strip-box">
+        <div class="feature-strip-icon"><i class="fa-solid fa-shield-cat"></i></div>
+        <div>
+          <h4>নির্ভুল ও নিরাপদ প্রসেসিং</h4>
+          <p>UK হোম অফিস ও DWP এর সাম্প্রতিক নিয়মের সাথে সঙ্গতি রেখে আপনার ফাইল পুঙ্খানুপুঙ্খ প্রস্তুত করা হয়।</p>
+        </div>
+      </div>
+
+      <div class="feature-strip-box">
+        <div class="feature-strip-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+        <div>
+          <h4>দ্রুত ডেডলাইন ম্যানেজমেন্ট</h4>
+          <p>ভিসা নবায়ন বা বেনিফিট রিভিউ—সময়ের এক চুল হেরফের না করে দ্রুত কার্যক্রম পরিচালনা।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== SERVICES: DYNAMIC LIST FORMAT ===== -->
+<section class="section-pad bg-white" id="services">
+  <div class="container-custom">
+    <div class="center-header">
+      <span class="section-kicker">আমাদের সেবাসমূহ</span>
+      <h2 class="section-main-heading">আমরা যে সকল <span class="badge-keyword">সেবা</span> প্রদান করি</h2>
+      <p class="section-subtext">যেকোনো সেবায় ক্লিক করে বিস্তারিত জানুন ও সরাসরি নির্দিষ্ট সেবার জন্য পরামর্শ নিন।</p>
+    </div>
+
+    <!-- Interactive Dynamic List Component -->
+    <div class="services-list-wrapper">
+      
+      <!-- Service 1 -->
+      <div class="service-list-item active">
+        <div class="service-item-summary">
+          <div class="summary-left">
+            <div class="svc-badge-icon"><i class="fa-solid fa-passport"></i></div>
+            <div class="svc-text-head">
+              <h3>ভিসা ও ইমিগ্রেশন কনসালটেশন</h3>
+              <p>স্পাউস ভিসা, এক্সটেনশন, ভিজিট ভিসা, স্টুডেন্ট কনভার্সন, ILR ও ব্রিটিশ নাগরিকত্ব আবেদন।</p>
+            </div>
+          </div>
+          <div class="summary-right">
+            <span class="status-tag">হাই ডিমান্ড</span>
+            <div class="arrow-toggle-btn"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+        </div>
+
+        <div class="service-item-drawer">
+          <div class="drawer-grid">
+            <div class="drawer-points">
+              <h5><i class="fa-solid fa-circle-info text-primary me-2"></i>এই সেবায় যা অন্তর্ভুক্ত:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> সম্পূর্ণ হোম অফিস রিকোয়ারমেন্ট অনুযায়ী ডকুমেন্টস চেকলিস্ট তৈরি।</li>
+                <li><i class="fa-solid fa-check"></i> অনলাইন আবেদনপত্র নির্ভুলভাবে পূরণ ও স্পনসরশিপ পেপার প্রস্তুত।</li>
+                <li><i class="fa-solid fa-check"></i> রিফিউজাল ঝুঁকি রোধে অভিজ্ঞ পরামর্শকের পর্যবেক্ষণ।</li>
+              </ul>
+            </div>
+            <div class="drawer-cta-panel">
+              <div class="small text-muted mb-2">এই বিষয়ের জন্য সরাসরি কথা বলুন</div>
+              <a href="https://wa.me/447885561722?text=আসসালামু%20আলাইকুম,%20আমি%20ভিসা%20ও%20ইমিগ্রেশন%20সেবা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener" class="btn-list-wa">
+                <i class="fa-brands fa-whatsapp"></i> ভিসা বিষয়ে চ্যাট করুন
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-list-item">
+        <div class="service-item-summary">
+          <div class="summary-left">
+            <div class="svc-badge-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <div class="svc-text-head">
+              <h3>বেনিফিট ও ওয়েলফেয়ার সহায়তা</h3>
+              <p>ইউনিভার্সাল ক্রেডিট (UC), পার্সোনাল ইন্ডিপেন্ডেন্স পেমেন্ট (PIP) ও হাউজিং সাপোর্ট।</p>
+            </div>
+          </div>
+          <div class="summary-right">
+            <span class="status-tag">DWP স্ট্যান্ডার্ড</span>
+            <div class="arrow-toggle-btn"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+        </div>
+
+        <div class="service-item-drawer">
+          <div class="drawer-grid">
+            <div class="drawer-points">
+              <h5><i class="fa-solid fa-circle-info text-primary me-2"></i>এই সেবায় যা অন্তর্ভুক্ত:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> বেনিফিট পাওয়ার যোগ্যতা যাচাই ও সঠিক ফর্ম ফিল-আপ।</li>
+                <li><i class="fa-solid fa-check"></i> PIP মেডিক্যাল এসেসমেন্টের প্রস্তুতি ও সাপোর্টিং এভিডেন্স যুক্ত করা।</li>
+                <li><i class="fa-solid fa-check"></i> আবেদন বাতিল হলে ম্যানডেটরি রিকনসিডারেশন (MR) প্রস্তুতকরণ।</li>
+              </ul>
+            </div>
+            <div class="drawer-cta-panel">
+              <div class="small text-muted mb-2">এই বিষয়ের জন্য সরাসরি কথা বলুন</div>
+              <a href="https://wa.me/447885561722?text=আসসালামু%20আলাইকুম,%20আমি%20বেনিফিট%20ও%20ওয়েলফেয়ার%20সহায়তা%20সম্পর্কে%20পরামর্শ%20চাই।" target="_blank" rel="noopener" class="btn-list-wa">
+                <i class="fa-brands fa-whatsapp"></i> বেনিফিট বিষয়ে চ্যাট করুন
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-list-item">
+        <div class="service-item-summary">
+          <div class="summary-left">
+            <div class="svc-badge-icon"><i class="fa-solid fa-file-contract"></i></div>
+            <div class="svc-text-head">
+              <h3>পাওয়ার অব অ্যাটর্নি (আমমোক্তারনামা)</h3>
+              <p>লন্ডনে বসে বাংলাদেশের জমিজমা হস্তান্তর, বিক্রি ও মামলা পরিচালনার বৈধ পাওয়ার অব অ্যাটর্নি।</p>
+            </div>
+          </div>
+          <div class="summary-right">
+            <span class="status-tag">দূতাবাস সত্যায়ন</span>
+            <div class="arrow-toggle-btn"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+        </div>
+
+        <div class="service-item-drawer">
+          <div class="drawer-grid">
+            <div class="drawer-points">
+              <h5><i class="fa-solid fa-circle-info text-primary me-2"></i>এই সেবায় যা অন্তর্ভুক্ত:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> বাংলাদেশ সরকারের প্রচলিত আইনের সঠিক ড্রাফটিং।</li>
+                <li><i class="fa-solid fa-check"></i> লন্ডনস্থ বাংলাদেশ হাই কমিশনে সত্যায়ন ও অ্যাপয়েন্টমেন্ট গাইড।</li>
+                <li><i class="fa-solid fa-check"></i> দেশে জমি রেজিস্ট্রেশন ও ডিসি অফিসের কাজ সম্পন্ন করার দিকনির্দেশনা।</li>
+              </ul>
+            </div>
+            <div class="drawer-cta-panel">
+              <div class="small text-muted mb-2">এই বিষয়ের জন্য সরাসরি কথা বলুন</div>
+              <a href="https://wa.me/447885561722?text=আসসালামু%20আলাইকুম,%20আমি%20পাওয়ার%20অব%20অ্যাটর্নি%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener" class="btn-list-wa">
+                <i class="fa-brands fa-whatsapp"></i> পাওয়ার অব অ্যাটর্নি চ্যাট
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-list-item">
+        <div class="service-item-summary">
+          <div class="summary-left">
+            <div class="svc-badge-icon"><i class="fa-solid fa-language"></i></div>
+            <div class="svc-text-head">
+              <h3>UK সার্টিফাইড ট্রান্সলেশন (অফিসিয়াল অনুবাদ)</h3>
+              <p>নিকাহনামা, জন্মনিবন্ধন, জমির খতিয়ান ও আদালতের কাগজপত্রের নির্ভরযোগ্য ইংরেজি অনুবাদ।</p>
+            </div>
+          </div>
+          <div class="summary-right">
+            <span class="status-tag">সার্টিফাইড সিল</span>
+            <div class="arrow-toggle-btn"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+        </div>
+
+        <div class="service-item-drawer">
+          <div class="drawer-grid">
+            <div class="drawer-points">
+              <h5><i class="fa-solid fa-circle-info text-primary me-2"></i>এই সেবায় যা অন্তর্ভুক্ত:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> যুক্তরাজ্যের হোম অফিস, কোর্ট ও কাউন্সিল কর্তৃক ১০০% গ্রহণযোগ্য।</li>
+                <li><i class="fa-solid fa-check"></i> সার্টিফাইড অনুবাদকের সিল ও ডিক্লারেশন লেটার যুক্ত।</li>
+                <li><i class="fa-solid fa-check"></i> মাত্র ২৪ থেকে ৪৮ ঘণ্টার মধ্যে এক্সপ্রেস ডেলিভারি সুবিধা।</li>
+              </ul>
+            </div>
+            <div class="drawer-cta-panel">
+              <div class="small text-muted mb-2">এই বিষয়ের জন্য সরাসরি কথা বলুন</div>
+              <a href="https://wa.me/447885561722?text=আসসালামু%20আলাইকুম,%20আমি%20ডকুমেন্ট%20ট্রান্সলেশন%20করতে%20চাই।" target="_blank" rel="noopener" class="btn-list-wa">
+                <i class="fa-brands fa-whatsapp"></i> ট্রান্সলেশন বিষয়ে চ্যাট
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-list-item">
+        <div class="service-item-summary">
+          <div class="summary-left">
+            <div class="svc-badge-icon"><i class="fa-solid fa-address-card"></i></div>
+            <div class="svc-text-head">
+              <h3>বাংলাদেশি ই-পাসপোর্ট ও NID সমাধান</h3>
+              <p>পাসপোর্ট রিনিউয়াল, জাতীয় পরিচয়পত্র (NID) সংশোধন ও ডিজিটাল জন্মসনদ সাপোর্ট।</p>
+            </div>
+          </div>
+          <div class="summary-right">
+            <span class="status-tag">অনলাইন সাপোর্ট</span>
+            <div class="arrow-toggle-btn"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+        </div>
+
+        <div class="service-item-drawer">
+          <div class="drawer-grid">
+            <div class="drawer-points">
+              <h5><i class="fa-solid fa-circle-info text-primary me-2"></i>এই সেবায় যা অন্তর্ভুক্ত:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> অনলাইন ফর্ম পূরণ ও হাই কমিশনের ফি পেমেন্ট সহায়তা।</li>
+                <li><i class="fa-solid fa-check"></i> নাম, জন্মতারিখ ও পিতা-মাতার নামের অমিল সংশোধনের উপায়।</li>
+                <li><i class="fa-solid fa-check"></i> ১৬ ডিজিটের অনলাইন ভেরিফায়েড জন্মনিবন্ধন সনদের কাজ।</li>
+              </ul>
+            </div>
+            <div class="drawer-cta-panel">
+              <div class="small text-muted mb-2">এই বিষয়ের জন্য সরাসরি কথা বলুন</div>
+              <a href="https://wa.me/447885561722?text=আসসালামু%20আলাইকুম,%20আমার%20পাসপোর্ট%20বা%20NID%20সংক্রান্ত%20সহায়তা%20দরকার।" target="_blank" rel="noopener" class="btn-list-wa">
+                <i class="fa-brands fa-whatsapp"></i> পাসপোর্ট/NID চ্যাট
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-list-item">
+        <div class="service-item-summary">
+          <div class="summary-left">
+            <div class="svc-badge-icon"><i class="fa-solid fa-scale-unbalanced"></i></div>
+            <div class="svc-text-head">
+              <h3>দেশে সম্পত্তি ও আইনি জটিলতা নিরসন</h3>
+              <p>বাংলাদেশে অবস্থিত জমিজমার দখল রক্ষা, রেকর্ড যাচাই ও নির্ভরযোগ্য উকিল সহায়তা।</p>
+            </div>
+          </div>
+          <div class="summary-right">
+            <span class="status-tag">আইনি সুরক্ষা</span>
+            <div class="arrow-toggle-btn"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+        </div>
+
+        <div class="service-item-drawer">
+          <div class="drawer-grid">
+            <div class="drawer-points">
+              <h5><i class="fa-solid fa-circle-info text-primary me-2"></i>এই সেবায় যা অন্তর্ভুক্ত:</h5>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> খতিয়ান, আরএস, বিএস ও পর্চা যাচাই করে প্রকৃত মালিকানা নিরূপণ।</li>
+                <li><i class="fa-solid fa-check"></i> প্রবাসে থেকে নিরাপদ প্রতিনিধির মাধ্যমে সম্পত্তি রক্ষণাবেক্ষণ।</li>
+                <li><i class="fa-solid fa-check"></i> সুপ্রিম কোর্ট ও জেলা জজ আদালতের অভিজ্ঞ আইনজীবীদের সমন্বয়।</li>
+              </ul>
+            </div>
+            <div class="drawer-cta-panel">
+              <div class="small text-muted mb-2">এই বিষয়ের জন্য সরাসরি কথা বলুন</div>
+              <a href="https://wa.me/447885561722?text=আসসালামু%20আলাইকুম,%20বাংলাদেশে%20সম্পত্তি%20সংক্রান্ত%20আইনি%20পরামর্শ%20চাই।" target="_blank" rel="noopener" class="btn-list-wa">
+                <i class="fa-brands fa-whatsapp"></i> সম্পত্তি বিষয়ে চ্যাট
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why Choose Us (Uploaded UI Framework) ===== -->
+<section class="section-pad" id="whyus">
+  <div class="container-custom">
+    <div class="about-ui-grid">
+      <div>
+        <span class="section-kicker">কেন আমাদের বেছে নেবেন</span>
+        <h2 class="section-main-heading">
+          আমরা প্রদান করি <span class="badge-keyword">সেরা</span> কমিউনিটি সেবা
+        </h2>
+        <p class="text-secondary mb-4">
+          যুক্তরাজ্যের আইন ও প্রশাসনিক প্রক্রিয়া অনেকের কাছে জটিল মনে হতে পারে। আমাদের লক্ষ্য প্রতিটি বাংলাদেশি পরিবার যেন স্বস্তির সাথে তাদের অধিকার ও নাগরিক সুবিধা পেতে পারেন।
+        </p>
+
+        <div class="metric-ring-row">
+          <div class="metric-circle-item">
+            <div class="circle-percent">৯৮%</div>
+            <div>
+              <strong class="d-block text-dark">সফলতার হার</strong>
+              <small class="text-muted">সঠিক ও নির্ভুল ফাইল প্রস্তুতি</small>
+            </div>
+          </div>
+
+          <div class="metric-circle-item">
+            <div class="circle-percent green">১০০%</div>
+            <div>
+              <strong class="d-block text-dark">গোপনীয়তা রক্ষা</strong>
+              <small class="text-muted">আপনার তথ্যের পূর্ণ নিরাপত্তা</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 pt-2">
+          <a href="#contact" class="btn-gold-action">
+            <i class="fa-solid fa-calendar-check"></i> কনসালটেশন বুক করুন
+          </a>
+        </div>
+      </div>
+
+      <!-- Process Visual Block -->
+      <div>
+        <div class="p-4 rounded-4" style="background: #FFFFFF; border: 1px solid var(--border-card); box-shadow: var(--shadow-sm);">
+          <h4 class="mb-3 text-dark"><i class="fa-solid fa-list-ol text-success me-2"></i>সেবা গ্রহণের সহজ ৩টি ধাপ:</h4>
+          
+          <div class="d-flex gap-3 mb-3 pb-3 border-bottom">
+            <div class="badge-keyword" style="width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">১</div>
+            <div>
+              <h5 class="mb-1 fs-6">মেসেজ বা ফোন করুন</h5>
+              <p class="small text-muted mb-0">আপনার সমস্যাটি সংক্ষেপে আমাদের জানান।</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 mb-3 pb-3 border-bottom">
+            <div class="badge-keyword" style="width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">২</div>
+            <div>
+              <h5 class="mb-1 fs-6">কাগজপত্র যাচাই ও পরামর্শ</h5>
+              <p class="small text-muted mb-0">আমাদের টিম আপনার ফাইল দেখে সঠিক সমাধান সাজাবে।</p>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3">
+            <div class="badge-keyword" style="width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">৩</div>
+            <div>
+              <h5 class="mb-1 fs-6">ঝামেলামুক্ত ফলাফল</h5>
+              <p class="small text-muted mb-0">নির্দিষ্ট সময়ের মধ্যে নির্ভুলভাবে কাজ সম্পন্ন।</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact & WhatsApp Area ===== -->
+<section class="section-pad" id="contact">
+  <div class="container-custom">
+    <div class="contact-wrapper-card">
+      <div class="text-center" style="max-width:650px; margin:0 auto;">
+        <span class="badge-keyword gold mb-2">যোগাযোগ ও লোকেশন</span>
+        <h2 class="text-white mt-2">আপনার প্রয়োজন লিখে সরাসরি পাঠান</h2>
+        <p class="text-light opacity-75">ফর্মটি পূরণ করলেই তথ্যসহ মেসেজটি সরাসরি আমাদের অফিশিয়াল হোয়াটসঅ্যাপে চলে আসবে।</p>
+      </div>
+
+      <div class="contact-layout-split">
+        <!-- Interactive Form -->
+        <div class="wa-panel-box">
+          <h3><i class="fa-brands fa-whatsapp text-success"></i> দ্রুত বার্তা পাঠান</h3>
+          <p class="small text-muted mb-3">আমাদের প্রতিনিধি খুব দ্রুত রিপ্লাই প্রদান করবেন।</p>
+
+          <form id="mainWaForm" novalidate>
+            <div class="form-group-item">
+              <label for="fName">আপনার নাম *</label>
+              <input type="text" class="form-control" id="fName" placeholder="যেমনঃ মোঃ আব্দুল মালিক" required>
+            </div>
+
+            <div class="form-group-item">
+              <label for="fPhone">মোবাইল নম্বর *</label>
+              <input type="tel" class="form-control" id="fPhone" placeholder="যেমনঃ 07123 456789" required>
+            </div>
+
+            <div class="form-group-item">
+              <label for="fService">কোন বিষয়ে সেবা চান?</label>
+              <select class="form-select" id="fService">
+                <option value="ভিসা ও ইমিগ্রেশন কনসালটেশন">ভিসা ও ইমিগ্রেশন কনসালটেশন</option>
+                <option value="বেনিফিট ও ওয়েলফেয়ার সহায়তা">বেনিফিট ও ওয়েলফেয়ার সহায়তা</option>
+                <option value="পাওয়ার অব অ্যাটর্নি (আমমোক্তারনামা)">পাওয়ার অব অ্যাটর্নি (আমমোক্তারনামা)</option>
+                <option value="UK সার্টিফাইড ট্রান্সলেশন">UK সার্টিফাইড ট্রান্সলেশন</option>
+                <option value="ই-পাসপোর্ট ও NID সংক্রান্ত">ই-পাসপোর্ট ও NID সংক্রান্ত</option>
+                <option value="দেশে সম্পত্তি সংক্রান্ত আইনি সহায়তা">দেশে সম্পত্তি সংক্রান্ত আইনি সহায়তা</option>
+                <option value="অন্যান্য বিষয়ে তথ্য">অন্যান্য যে কোনো বিষয়</option>
+              </select>
+            </div>
+
+            <div class="form-group-item">
+              <label for="fMsg">আপনার বার্তা (ঐচ্ছিক)</label>
+              <textarea class="form-control" id="fMsg" rows="3" placeholder="সংক্ষেপে আপনার প্রশ্নটি লিখুন..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-main-wa">
+              <i class="fa-brands fa-whatsapp fa-xl"></i> হোয়াটসঅ্যাপে পাঠিয়ে দিন
+            </button>
+
+            <div id="waErrorAlert" class="alert alert-danger py-2 mt-3 small text-center" style="display:none;">
+              অনুগ্রহ করে নাম এবং মোবাইল নম্বরটি পূরণ করুন।
+            </div>
+          </form>
+        </div>
+
+        <!-- Info Cards -->
+        <div>
+          <div class="direct-info-card">
+            <div class="direct-info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="direct-info-text">
+              <h5>লন্ডন অফিস ঠিকানা</h5>
+              <span>East London Business Centre<br>93–101 Greenfield Road, London, E1 1EJ</span>
+            </div>
+          </div>
+
+          <div class="direct-info-card">
+            <div class="direct-info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="direct-info-text">
+              <h5>হেল্পলাইন ও কল</h5>
+              <a href="tel:+447885561722">07885 561722</a> &nbsp;|&nbsp; 
+              <a href="tel:+447950880127">+44 7950 880127</a>
+            </div>
+          </div>
+
+          <div class="direct-info-card">
+            <div class="direct-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="direct-info-text">
+              <h5>অফিসিয়াল ইমেইল</h5>
+              <a href="mailto:ukbanglacommunityservices@gmail.com">ukbanglacommunityservices@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="direct-info-card">
+            <div class="direct-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="direct-info-text">
+              <h5>অফিস খোলা থাকার সময়</h5>
+              <span>সোম - শুক্রবার: সকাল ১০টা - সন্ধ্যা ৬টা</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Site Footer ===== -->
+<footer class="site-footer">
+  <div class="container-custom">
+    <div class="footer-grid-layout">
+      <!-- Col 1 -->
+      <div>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div style="width:34px; height:34px; border-radius:8px; background:var(--c-bd-green); color:#fff; display:flex; align-items:center; justify-content:center;">
+            <i class="fa-solid fa-scale-balanced"></i>
+          </div>
+          <h4 class="mb-0">ইউকে বাংলা কমিউনিটি সার্ভিসেস</h4>
+        </div>
+        <p style="font-size:0.88rem; line-height:1.7;">
+          যুক্তরাজ্যে বসবাসরত প্রবাসী বাংলাদেশি কমিউনিটির আইনগত, প্রশাসনিক ও নথিপত্রের বিশ্বস্ত ঠিকানা।
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h4>কুইক লিংক</h4>
+        <ul>
+          <li><a href="#home">হোম পেজ</a></li>
+          <li><a href="#about">আমাদের সম্পর্কে</a></li>
+          <li><a href="#services">সেবাসমূহ</a></li>
+          <li><a href="#whyus">কেন আমরা সেরা</a></li>
+          <li><a href="#contact">যোগাযোগ</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h4>জরুরি যোগাযোগ</h4>
+        <p class="mb-1"><i class="fa-solid fa-phone text-warning me-2"></i> 07885 561722</p>
+        <p class="mb-1"><i class="fa-solid fa-phone text-warning me-2"></i> +44 7950 880127</p>
+        <p><i class="fa-solid fa-location-dot text-danger me-2"></i> 93–101 Greenfield Road, London, E1 1EJ</p>
+      </div>
+    </div>
+
+    <div class="border-top pt-3 d-flex justify-content-between align-items-center flex-wrap gap-2 text-white-50" style="font-size:0.84rem; border-color: rgba(255,255,255,0.08) !important;">
+      <div>© ২০২৬ ইউকে বাংলা কমিউনিটি সার্ভিসেস (UK Bangla Community Services)</div>
+      <div>Dedicated to the British-Bangladeshi Community</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/447885561722" class="wa-floating-trigger" target="_blank" rel="noopener" aria-label="হোয়াটসঅ্যাপে চ্যাট করুন">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- Bootstrap 5 Bundle JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Dynamic Services List Expand/Collapse functionality
+  document.querySelectorAll('.service-list-item').forEach(item => {
+    const summary = item.querySelector('.service-item-summary');
+    summary.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      // Close all items
+      document.querySelectorAll('.service-list-item').forEach(el => el.classList.remove('active'));
+      // Toggle clicked item
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+
+  // WhatsApp Message Generator Script
+  document.getElementById('mainWaForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const name = document.getElementById('fName').value.trim();
+    const phone = document.getElementById('fPhone').value.trim();
+    const service = document.getElementById('fService').value;
+    const msg = document.getElementById('fMsg').value.trim();
+    const errAlert = document.getElementById('waErrorAlert');
+
+    if(!name || !phone){
+      errAlert.style.display = 'block';
+      return;
+    }
+    errAlert.style.display = 'none';
+
+    const fullText = 
+      "আসসালামু আলাইকুম।\n\n" +
+      "আমার নাম: " + name + "\n" +
+      "মোবাইল নম্বর: " + phone + "\n" +
+      "প্রয়োজনীয় সেবা: " + service + "\n" +
+      (msg ? ("বিস্তারিত তথ্য: " + msg + "\n\n") : "\n") +
+      "আমি এই বিষয়ে পরামর্শ পেতে আগ্রহী। অনুগ্রহ করে জানালে উপকৃত হব। ধন্যবাদ।";
+
+    const targetUrl = "https://wa.me/447885561722?text=" + encodeURIComponent(fullText);
+    window.open(targetUrl, '_blank');
+  });
+</script>
+
+</body>
+</html>
