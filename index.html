@@ -197,7 +197,12 @@
       font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--brand-navy);
       font-weight: 700;
       line-height: 1.34;
@@ -418,6 +423,7 @@
       opacity: 0.25;
       z-index: 1;
     }
+
     .hero-glow-blob.blue {
       width: 450px;
       height: 450px;
@@ -425,6 +431,7 @@
       top: -100px;
       left: -100px;
     }
+
     .hero-glow-blob.red {
       width: 380px;
       height: 380px;
@@ -433,6 +440,7 @@
       left: 35%;
       opacity: 0.18;
     }
+
     .hero-glow-blob.green {
       width: 420px;
       height: 420px;
@@ -668,6 +676,7 @@
     .bg-light-glow {
       position: relative;
     }
+
     .bg-light-glow::before {
       content: "";
       position: absolute;
@@ -679,6 +688,7 @@
       left: -150px;
       pointer-events: none;
     }
+
     .bg-light-glow::after {
       content: "";
       position: absolute;
@@ -1584,48 +1594,229 @@
         grid-template-columns: 1fr 1fr;
         gap: 32px;
       }
+
+      .hero-grid>*,
+      .office-showcase-box>*,
+      .whyus-grid-layout>*,
+      .contact-split-grid>* {
+        min-width: 0;
+      }
     }
 
     @media (max-width: 600px) {
+
+      .bg-light-glow::before,
+      .bg-light-glow::after {
+        right: auto;
+        left: 0;
+        width: 100%;
+      }
+
+      .container-custom {
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+
+      .navbar-container {
+        height: 64px;
+        gap: 8px;
+      }
+
+      .brand-logo-img {
+        height: 38px;
+      }
+
+      .lang-switch-box {
+        margin-left: 0;
+      }
+
+      .lang-btn {
+        padding: 4px 9px;
+        font-size: 0.76rem;
+      }
+
       .section-pad {
-        padding: 55px 0;
+        padding: 48px 0;
       }
 
       .hero-section-straight {
-        padding: 60px 0 65px;
+        padding: 48px 0 52px;
+      }
+
+      .hero-grid {
+        gap: 28px;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-lead {
+        font-size: 0.98rem;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+      }
+
+      .btn-hero-primary,
+      .btn-hero-secondary {
+        justify-content: center;
+        width: 100%;
+        padding: 11px 16px;
+      }
+
+      .hero-framed-card {
+        padding: 14px;
+      }
+
+      .framed-stat-item {
+        padding: 10px 12px;
+        gap: 10px;
+      }
+
+      .framed-stat-text h4 {
+        font-size: 1.05rem;
       }
 
       .contact-wrapper-card {
-        padding: 28px 18px;
+        padding: 24px 14px;
+        border-radius: 16px;
+      }
+
+      .contact-split-grid {
+        gap: 20px;
+        margin-top: 22px;
+      }
+
+      .form-container-box {
+        padding: 20px 16px;
+      }
+
+      .form-container-box h3 {
+        align-items: flex-start;
+        font-size: 1.08rem;
+      }
+
+      .form-unit .form-control,
+      .form-unit .form-select {
+        max-width: 100%;
+      }
+
+      .info-deck-card {
+        padding: 13px 12px;
+        gap: 11px;
+        border-radius: 10px;
+      }
+
+      .info-deck-text {
+        min-width: 0;
+      }
+
+      .info-deck-text a,
+      .info-deck-text span {
+        font-size: 0.88rem;
+        overflow-wrap: anywhere;
+      }
+
+      .info-deck-text a[href^="tel:"] {
+        display: inline-block;
+      }
+
+      .contact-wrapper-card h2 {
+        font-size: 1.55rem;
+      }
+
+      .contact-wrapper-card>.text-center>p {
+        font-size: 0.92rem;
       }
 
       .metric-boxes-row {
         grid-template-columns: 1fr;
+        gap: 12px;
+        margin: 20px 0 24px;
+      }
+
+      .metric-stat-card {
+        padding: 16px;
+      }
+
+      .metric-stat-val {
+        font-size: 1.8rem;
       }
 
       .steps-card-container {
-        padding: 22px 18px;
+        padding: 20px 16px;
       }
 
       .service-row-header {
-        padding: 16px;
+        padding: 14px;
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .header-left-cluster {
+        width: 100%;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .svc-icon-badge {
+        width: 42px;
+        height: 42px;
+        border-radius: 11px;
+        font-size: 1.05rem;
+      }
+
+      .svc-title-text {
+        min-width: 0;
+      }
+
+      .svc-title-text h3 {
+        font-size: 1.02rem;
+      }
+
+      .svc-title-text p {
+        font-size: 0.84rem;
       }
 
       .header-right-cluster {
         width: 100%;
         justify-content: space-between;
-        margin-top: 10px;
+        margin-top: 6px;
+      }
+
+      .service-detail-drawer {
+        padding: 0 14px 16px;
+      }
+
+      .drawer-cta-card {
+        padding: 16px;
       }
 
       .footer-top-grid {
         grid-template-columns: 1fr;
-        gap: 28px;
+        gap: 24px;
       }
 
-      .brand-logo-img {
-        height: 40px;
+      footer.site-footer-custom {
+        padding: 48px 0 28px;
+      }
+
+      .footer-circle-socials {
+        gap: 10px;
+      }
+
+      .footer-copyright-center {
+        font-size: 0.78rem;
+      }
+
+      .fab-whatsapp {
+        right: calc(14px + env(safe-area-inset-right, 0px));
+        bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
       }
     }
   </style>
@@ -1695,12 +1886,18 @@
         </div>
 
         <ul class="list-unstyled d-flex flex-column gap-3 fs-5">
-          <li><a href="#home" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_home">হোম পেজ</a></li>
-          <li><a href="#about" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_about">আমাদের কথা</a></li>
-          <li><a href="#services" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_services">সেবাসমূহ</a></li>
-          <li><a href="#whyus" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_whyus">কেন আমরা</a></li>
-          <li><a href="#team" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_team">আমাদের অভিজ্ঞ টিম</a></li>
-          <li><a href="#contact" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</a></li>
+          <li><a href="#home" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block" data-i18n="nav_home">হোম
+              পেজ</a></li>
+          <li><a href="#about" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block"
+              data-i18n="nav_about">আমাদের কথা</a></li>
+          <li><a href="#services" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block"
+              data-i18n="nav_services">সেবাসমূহ</a></li>
+          <li><a href="#whyus" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block"
+              data-i18n="nav_whyus">কেন আমরা</a></li>
+          <li><a href="#team" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block"
+              data-i18n="nav_team">আমাদের অভিজ্ঞ টিম</a></li>
+          <li><a href="#contact" data-bs-dismiss="offcanvas" class="text-dark fw-semibold d-block"
+              data-i18n="nav_contact">যোগাযোগ ও ঠিকানা</a></li>
         </ul>
       </div>
 
@@ -1728,19 +1925,23 @@
         <div class="hero-grid">
           <div>
             <div class="hero-badge">
-              <i class="fa-solid fa-shield-halved text-warning"></i> <span data-i18n="hero_badge">যুক্তরাজ্যে বাংলাদেশি পরিবারের বিশ্বস্ত ঠিকানা — ইউকে বাংলা কমিউনিটি সার্ভিসেস</span>
+              <i class="fa-solid fa-shield-halved text-warning"></i> <span data-i18n="hero_badge">যুক্তরাজ্যে বাংলাদেশি
+                পরিবারের বিশ্বস্ত ঠিকানা — ইউকে বাংলা কমিউনিটি সার্ভিসেস</span>
             </div>
             <h1 class="hero-title" data-i18n="hero_title">
               প্রবাসের যেকোনো <span class="highlight-badge">কাগজপত্রের কাজে</span> আমরা আছি <span
                 class="highlight-badge green">আপনার পাশে</span>
             </h1>
             <p class="hero-lead" data-i18n="hero_lead">
-              ভিসা নবায়ন, ইউনিভার্সাল ক্রেডিট বা পিআইপি, পাসপোর্ট সংশোধন কিংবা দেশের জমিজমার পাওয়ার অব অ্যাটর্নি—কোনো কিছু নিয়েই চিন্তার কারণ নেই। UK Bangla Community Services কোনো জটিলতা ছাড়া সহজ বাংলায় সবকিছু বুঝিয়ে সঠিক সমাধান দেবে।
+              ভিসা নবায়ন, ইউনিভার্সাল ক্রেডিট বা পিআইপি, পাসপোর্ট সংশোধন কিংবা দেশের জমিজমার পাওয়ার অব অ্যাটর্নি—কোনো
+              কিছু নিয়েই চিন্তার কারণ নেই। UK Bangla Community Services কোনো জটিলতা ছাড়া সহজ বাংলায় সবকিছু বুঝিয়ে সঠিক
+              সমাধান দেবে।
             </p>
 
             <div class="hero-actions">
               <a href="#contact" class="btn-hero-primary">
-                <i class="fa-brands fa-whatsapp fa-lg"></i> <span data-i18n="btn_free_consult">একটু কথা বলে পরামর্শ নিন</span>
+                <i class="fa-brands fa-whatsapp fa-lg"></i> <span data-i18n="btn_free_consult">একটু কথা বলে পরামর্শ
+                  নিন</span>
               </a>
               <a href="#services" class="btn-hero-secondary">
                 <i class="fa-solid fa-list-check"></i> <span data-i18n="btn_view_services">সেবাগুলো দেখে নিন</span>
@@ -1748,9 +1949,11 @@
             </div>
 
             <div class="d-flex align-items-center gap-3 text-white-50 small flex-wrap">
-              <span><i class="fa-solid fa-circle-check text-success me-1"></i> <span data-i18n="hero_trust_1">হোম অফিসের নিয়ম মেনে কাজ</span></span>
+              <span><i class="fa-solid fa-circle-check text-success me-1"></i> <span data-i18n="hero_trust_1">হোম অফিসের
+                  নিয়ম মেনে কাজ</span></span>
               <span>|</span>
-              <span><i class="fa-solid fa-user-lock text-warning me-1"></i> <span data-i18n="hero_trust_2">আপনার তথ্যের পূর্ণ নিরাপত্তা</span></span>
+              <span><i class="fa-solid fa-user-lock text-warning me-1"></i> <span data-i18n="hero_trust_2">আপনার তথ্যের
+                  পূর্ণ নিরাপত্তা</span></span>
             </div>
           </div>
 
@@ -1799,13 +2002,15 @@
           <h2 class="section-title" data-i18n="about_title">বিদেশে কাগজপত্রের কাজ সামলানো কঠিন, <span
               class="highlight-badge">কিন্তু একা সামলানোর দরকার নেই</span></h2>
           <p class="section-subtitle" data-i18n="about_subtitle">
-            ভাষার সমস্যা কিংবা আইনের জটিলতার কারণে অনেকে সঠিক সুবিধা থেকে বঞ্চিত হন। UK Bangla Community Services গড়ে উঠেছে ঠিক এই কারণে—যাতে প্রতিটি প্রবাসী ভাই-বোন নিজের ভাষায় নির্দ্বিধায় কথা বলে সঠিক সমাধান পেতে পারেন।
+            ভাষার সমস্যা কিংবা আইনের জটিলতার কারণে অনেকে সঠিক সুবিধা থেকে বঞ্চিত হন। UK Bangla Community Services গড়ে
+            উঠেছে ঠিক এই কারণে—যাতে প্রতিটি প্রবাসী ভাই-বোন নিজের ভাষায় নির্দ্বিধায় কথা বলে সঠিক সমাধান পেতে পারেন।
           </p>
         </div>
 
         <div class="office-showcase-box">
           <div class="office-showcase-img">
-            <img src="assets/img/office-interior.jpg" alt="UK Bangla Community Services London Office Consultation Space" loading="lazy"
+            <img src="assets/img/office-interior.jpg"
+              alt="UK Bangla Community Services London Office Consultation Space" loading="lazy"
               onerror="this.src='https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=900&q=80'">
           </div>
           <div class="office-showcase-details">
@@ -1814,7 +2019,9 @@
               data-i18n="office_badge">পূর্ব লন্ডনে আমাদের অফিস</span>
             <h3 data-i18n="office_head">সরাসরি অফিসে এসে এক কাপ চা খেতে খেতে কথা বলুন</h3>
             <p data-i18n="office_p">
-              ফোনে তো যোগাযোগ করতেই পারেন, তবে আপনি চাইলে সরাসরি আমাদের অফিসেও চলে আসতে পারেন। কাগজপত্রগুলো সামনাসামনি দেখে একদম পরিষ্কারভাবে বুঝিয়ে দেব কী করতে হবে। কোনো তাড়াহুড়ো নেই, আপনার সমস্যাটি মন দিয়ে শোনাই UK Bangla Community Services-এর প্রথম কাজ।
+              ফোনে তো যোগাযোগ করতেই পারেন, তবে আপনি চাইলে সরাসরি আমাদের অফিসেও চলে আসতে পারেন। কাগজপত্রগুলো সামনাসামনি
+              দেখে একদম পরিষ্কারভাবে বুঝিয়ে দেব কী করতে হবে। কোনো তাড়াহুড়ো নেই, আপনার সমস্যাটি মন দিয়ে শোনাই UK Bangla
+              Community Services-এর প্রথম কাজ।
             </p>
             <a href="#contact" class="btn-hero-primary py-2 px-4" style="font-size:0.9rem;">
               <i class="fa-solid fa-map-location-dot"></i> <span data-i18n="office_btn">অফিসে আসার সময় ঠিক করুন</span>
@@ -1829,9 +2036,10 @@
       <div class="container-custom">
         <div class="section-heading-wrap">
           <span class="section-tag" data-i18n="svc_section_tag">আমাদের সেবাসমূহ</span>
-          <h2 class="section-title" data-i18n="svc_section_title">যেসব বিষয়ে <span
-              class="highlight-badge green">UK Bangla Community Services</span> আপনাকে সহযোগিতা করে</h2>
-          <p class="section-subtitle" data-i18n="svc_section_subtitle">যে সেবাটি প্রয়োজন সেটিতে ক্লিক করে বিস্তারিত দেখে নিন। কোনো প্রশ্ন থাকলে সরাসরি মেসেজ দিন।</p>
+          <h2 class="section-title" data-i18n="svc_section_title">যেসব বিষয়ে <span class="highlight-badge green">UK
+              Bangla Community Services</span> আপনাকে সহযোগিতা করে</h2>
+          <p class="section-subtitle" data-i18n="svc_section_subtitle">যে সেবাটি প্রয়োজন সেটিতে ক্লিক করে বিস্তারিত দেখে
+            নিন। কোনো প্রশ্ন থাকলে সরাসরি মেসেজ দিন।</p>
         </div>
 
         <div class="services-list-container">
@@ -1842,7 +2050,8 @@
                 <div class="svc-icon-badge"><i class="fa-solid fa-kaaba"></i></div>
                 <div class="svc-title-text">
                   <h3 data-i18n="svc_1_title">১. হজ ও ওমরাহ্ ভিসা এবং সাশ্রয়ী ট্রাভেল প্যাকেজ</h3>
-                  <p data-i18n="svc_1_desc">স্বল্প খরচে নির্ভরযোগ্য হজ ও ওমরাহ্ ভিসা প্রসেসিং, সাশ্রয়ী ট্রাভেল প্যাকেজ, বিমানের টিকিট, হোটেল বুকিং এবং সফর সংক্রান্ত যাবতীয় দিকনির্দেশনা ও সার্বিক সহযোগিতা।</p>
+                  <p data-i18n="svc_1_desc">স্বল্প খরচে নির্ভরযোগ্য হজ ও ওমরাহ্ ভিসা প্রসেসিং, সাশ্রয়ী ট্রাভেল প্যাকেজ,
+                    বিমানের টিকিট, হোটেল বুকিং এবং সফর সংক্রান্ত যাবতীয় দিকনির্দেশনা ও সার্বিক সহযোগিতা।</p>
                 </div>
               </div>
               <div class="header-right-cluster">
@@ -1857,17 +2066,22 @@
                   <h5><i class="fa-solid fa-circle-check text-success me-2"></i><span
                       data-i18n="drawer_benefits_head">এই সেবায় যা যা সুবিধা পাবেন:</span></h5>
                   <ul>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p1">ভিসা প্রসেসিং ও প্রয়োজনীয় অনুমোদনের দ্রুত ব্যবস্থা।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p2">ভালো এয়ারলাইন্সের টিকিট এবং তাৎক্ষণিক কনফার্মেশন।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p3">মক্কা ও মদিনায় হেরেম শরীফের কাছে সুবিধাজনক হোটেল বুকিং।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p4">পুরো সফরে কীভাবে কী করবেন, তার সম্পূর্ণ পরামর্শ ও সার্বক্ষণিক সাপোর্ট।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p1">ভিসা প্রসেসিং ও প্রয়োজনীয় অনুমোদনের
+                        দ্রুত ব্যবস্থা।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p2">ভালো এয়ারলাইন্সের টিকিট এবং
+                        তাৎক্ষণিক কনফার্মেশন।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p3">মক্কা ও মদিনায় হেরেম শরীফের কাছে
+                        সুবিধাজনক হোটেল বুকিং।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_1_p4">পুরো সফরে কীভাবে কী করবেন, তার
+                        সম্পূর্ণ পরামর্শ ও সার্বক্ষণিক সাপোর্ট।</span></li>
                   </ul>
                 </div>
                 <div class="drawer-cta-card">
                   <div class="small text-muted mb-2" data-i18n="svc_1_chat_prompt">হজ বা ওমরাহ্ নিয়ে কথা বলতে চান?</div>
                   <a href="https://wa.me/447885561722?text=Assalamu%20Alaikum,%20I%20would%20like%20to%20know%20about%20Hajj%20&%20Umrah%20Packages%20from%20UK%20Bangla%20Community%20Services."
                     target="_blank" rel="noopener" class="btn-drawer-wa">
-                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_1_chat_btn">হজ ও ওমরাহ্ নিয়ে কথা বলুন</span>
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_1_chat_btn">হজ ও ওমরাহ্ নিয়ে কথা
+                      বলুন</span>
                   </a>
                 </div>
               </div>
@@ -1881,7 +2095,8 @@
                 <div class="svc-icon-badge"><i class="fa-solid fa-passport"></i></div>
                 <div class="svc-title-text">
                   <h3 data-i18n="svc_2_title">২. সব ধরনের ইউকে ভিসা আবেদন, মেয়াদ বৃদ্ধি ও ব্রিটিশ নাগরিকত্ব</h3>
-                  <p data-i18n="svc_2_desc">সকল ধরণের ভিসা আবেদন ও মেয়াদ বৃদ্ধি (স্টুডেন্ট ভিসা, ভিজিট ভিসা ও শেনজেন ভিসাসহ) ইউরোপিয়ান সেটেলমেন্ট এবং ব্রিটিশ নাগরিকত্ব সংক্রান্ত সার্বিক সহযোগিতা।</p>
+                  <p data-i18n="svc_2_desc">সকল ধরণের ভিসা আবেদন ও মেয়াদ বৃদ্ধি (স্টুডেন্ট ভিসা, ভিজিট ভিসা ও শেনজেন
+                    ভিসাসহ) ইউরোপিয়ান সেটেলমেন্ট এবং ব্রিটিশ নাগরিকত্ব সংক্রান্ত সার্বিক সহযোগিতা।</p>
                 </div>
               </div>
               <div class="header-right-cluster">
@@ -1896,17 +2111,22 @@
                   <h5><i class="fa-solid fa-circle-check text-success me-2"></i><span
                       data-i18n="drawer_benefits_head">এই সেবায় যা যা সুবিধা পাবেন:</span></h5>
                   <ul>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p1">স্টুডেন্ট, ভিজিটর, স্পাউস এবং ইউরোপ ভ্রমণের শেনজেন ভিসা আবেদন।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p2">ভিসার মেয়াদ বাড়ানোর সঠিক প্রস্তুতি যেন কোনো ঝুঁকি না থাকে।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p3">ইউরোপিয়ান সেটেলমেন্ট স্কিম (EUSS) সংক্রান্ত যেকোনো সমস্যা সমাধান।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p4">ইনডিফিনিট লিভ টু রিমেইন (ILR) এবং ব্রিটিশ পাসপোর্টের আবেদন প্রক্রিয়া।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p1">স্টুডেন্ট, ভিজিটর, স্পাউস এবং ইউরোপ
+                        ভ্রমণের শেনজেন ভিসা আবেদন।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p2">ভিসার মেয়াদ বাড়ানোর সঠিক প্রস্তুতি
+                        যেন কোনো ঝুঁকি না থাকে।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p3">ইউরোপিয়ান সেটেলমেন্ট স্কিম (EUSS)
+                        সংক্রান্ত যেকোনো সমস্যা সমাধান।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_2_p4">ইনডিফিনিট লিভ টু রিমেইন (ILR) এবং
+                        ব্রিটিশ পাসপোর্টের আবেদন প্রক্রিয়া।</span></li>
                   </ul>
                 </div>
                 <div class="drawer-cta-card">
                   <div class="small text-muted mb-2" data-i18n="svc_2_chat_prompt">ভিসা নিয়ে কিছু জানতে চান?</div>
                   <a href="https://wa.me/447885561722?text=Assalamu%20Alaikum,%20I%20need%20assistance%20with%20UK%20Visa%20Application%20or%20Extension%20from%20UK%20Bangla%20Community%20Services."
                     target="_blank" rel="noopener" class="btn-drawer-wa">
-                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_2_chat_btn">ভিসা নিয়ে সরাসরি কথা বলুন</span>
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_2_chat_btn">ভিসা নিয়ে সরাসরি কথা
+                      বলুন</span>
                   </a>
                 </div>
               </div>
@@ -1920,7 +2140,8 @@
                 <div class="svc-icon-badge"><i class="fa-solid fa-hand-holding-heart"></i></div>
                 <div class="svc-title-text">
                   <h3 data-i18n="svc_3_title">৩. ইউনিভার্সাল ক্রেডিট (UC) ও পিআইপি (PIP) সহ সরকারি বেনিফিট</h3>
-                  <p data-i18n="svc_3_desc">ইউনিভার্সাল ক্রেডিট (Universal Credit), পিআইপি (PIP) সহ ইউকে সরকারের সকল প্রকার বেনিফিটের আবেদন ও জটিলতা সংক্রান্ত সার্বিক সহায়তা।</p>
+                  <p data-i18n="svc_3_desc">ইউনিভার্সাল ক্রেডিট (Universal Credit), পিআইপি (PIP) সহ ইউকে সরকারের সকল
+                    প্রকার বেনিফিটের আবেদন ও জটিলতা সংক্রান্ত সার্বিক সহায়তা।</p>
                 </div>
               </div>
               <div class="header-right-cluster">
@@ -1935,17 +2156,22 @@
                   <h5><i class="fa-solid fa-circle-check text-success me-2"></i><span
                       data-i18n="drawer_benefits_head">এই সেবায় যা যা সুবিধা পাবেন:</span></h5>
                   <ul>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p1">আপনি কোন বেনিফিট পাওয়ার যোগ্য তা যাচাই করে সঠিক ফর্ম পূরণ।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p2">পিআইপি (PIP) মেডিক্যাল অ্যাসেসমেন্টে কীভাবে কথা বলবেন তার প্রস্তুতি।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p3">কোনো কারণে বেনিফিট বন্ধ বা কমে গেলে আপিল ও রিভিউতে সহায়তা।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p4">চাইল্ড বেনিফিট ও পেনশন ক্রেডিটের সরকারি সুযোগ নিশ্চিত করা।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p1">আপনি কোন বেনিফিট পাওয়ার যোগ্য তা
+                        যাচাই করে সঠিক ফর্ম পূরণ।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p2">পিআইপি (PIP) মেডিক্যাল
+                        অ্যাসেসমেন্টে কীভাবে কথা বলবেন তার প্রস্তুতি।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p3">কোনো কারণে বেনিফিট বন্ধ বা কমে গেলে
+                        আপিল ও রিভিউতে সহায়তা।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_3_p4">চাইল্ড বেনিফিট ও পেনশন ক্রেডিটের
+                        সরকারি সুযোগ নিশ্চিত করা।</span></li>
                   </ul>
                 </div>
                 <div class="drawer-cta-card">
                   <div class="small text-muted mb-2" data-i18n="svc_3_chat_prompt">বেনিফিট বিষয়ে কথা বলতে চান?</div>
                   <a href="https://wa.me/447885561722?text=Assalamu%20Alaikum,%20I%20need%20support%20with%20Universal%20Credit%20or%20PIP%20Benefits%20from%20UK%20Bangla%20Community%20Services."
                     target="_blank" rel="noopener" class="btn-drawer-wa">
-                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_3_chat_btn">বেনিফিট নিয়ে পরামর্শ নিন</span>
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_3_chat_btn">বেনিফিট নিয়ে পরামর্শ
+                      নিন</span>
                   </a>
                 </div>
               </div>
@@ -1959,7 +2185,8 @@
                 <div class="svc-icon-badge"><i class="fa-solid fa-id-card"></i></div>
                 <div class="svc-title-text">
                   <h3 data-i18n="svc_4_title">৪. পাসপোর্ট, এনআইডি (NID), জন্ম সনদ ও পাওয়ার অব অ্যাটর্নি</h3>
-                  <p data-i18n="svc_4_desc">পাসপোর্ট, জাতীয় পরিচয়পত্র (NID) ও জন্ম সনদের নতুন আবেদন ও সংশোধন এবং পাওয়ার অব অ্যাটর্নি প্রস্তুতকরণ, প্রক্রিয়াকরণসহ এ সংক্রান্ত যাবতীয় আইনি পরামর্শ ও সার্বিক সহযোগিতা।</p>
+                  <p data-i18n="svc_4_desc">পাসপোর্ট, জাতীয় পরিচয়পত্র (NID) ও জন্ম সনদের নতুন আবেদন ও সংশোধন এবং পাওয়ার
+                    অব অ্যাটর্নি প্রস্তুতকরণ, প্রক্রিয়াকরণসহ এ সংক্রান্ত যাবতীয় আইনি পরামর্শ ও সার্বিক সহযোগিতা।</p>
                 </div>
               </div>
               <div class="header-right-cluster">
@@ -1974,17 +2201,23 @@
                   <h5><i class="fa-solid fa-circle-check text-success me-2"></i><span
                       data-i18n="drawer_benefits_head">এই সেবায় যা যা সুবিধা পাবেন:</span></h5>
                   <ul>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p1">নতুন ই-পাসপোর্ট আবেদন বা মেয়াদ উত্তীর্ণ পাসপোর্ট নবায়ন।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p2">এনআইডি তৈরি এবং নাম, বয়স বা জন্মতারিখ সংশোধন সহায়তা।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p3">১৭ ডিজিটের ডিজিটাল ভেরিফায়েড জন্ম সনদ আবেদন ও ভুল সংশোধন।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p4">বাংলাদেশ দূতাবাসের নিয়ম মেনে পাওয়ার অব অ্যাটর্নি তৈরি ও সত্যায়ন।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p1">নতুন ই-পাসপোর্ট আবেদন বা মেয়াদ
+                        উত্তীর্ণ পাসপোর্ট নবায়ন।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p2">এনআইডি তৈরি এবং নাম, বয়স বা
+                        জন্মতারিখ সংশোধন সহায়তা।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p3">১৭ ডিজিটের ডিজিটাল ভেরিফায়েড জন্ম
+                        সনদ আবেদন ও ভুল সংশোধন।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_4_p4">বাংলাদেশ দূতাবাসের নিয়ম মেনে পাওয়ার
+                        অব অ্যাটর্নি তৈরি ও সত্যায়ন।</span></li>
                   </ul>
                 </div>
                 <div class="drawer-cta-card">
-                  <div class="small text-muted mb-2" data-i18n="svc_4_chat_prompt">পাসপোর্ট বা এনআইডি নিয়ে কিছু জানতে চান?</div>
+                  <div class="small text-muted mb-2" data-i18n="svc_4_chat_prompt">পাসপোর্ট বা এনআইডি নিয়ে কিছু জানতে
+                    চান?</div>
                   <a href="https://wa.me/447885561722?text=Assalamu%20Alaikum,%20I%20need%20support%20with%20Passport,%20NID%20or%20Power%20of%20Attorney%20from%20UK%20Bangla%20Community%20Services."
                     target="_blank" rel="noopener" class="btn-drawer-wa">
-                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_4_chat_btn">পাসপোর্ট বা এনআইডি নিয়ে কথা বলুন</span>
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_4_chat_btn">পাসপোর্ট বা এনআইডি নিয়ে কথা
+                      বলুন</span>
                   </a>
                 </div>
               </div>
@@ -1998,7 +2231,8 @@
                 <div class="svc-icon-badge"><i class="fa-solid fa-scale-unbalanced"></i></div>
                 <div class="svc-title-text">
                   <h3 data-i18n="svc_5_title">৫. বাংলাদেশে জমি-জমা সংক্রান্ত সমস্যা সমাধান ও সম্পত্তি রক্ষা</h3>
-                  <p data-i18n="svc_5_desc">যুক্তরাজ্যে বসেই বাংলাদেশে অবস্থিত জমি-জমা সংক্রান্ত জটিলতা নিরসন, সম্পত্তি উদ্ধার ও সুরক্ষায় প্রয়োজনীয় আইনি ও প্রশাসনিক সহযোগিতা।</p>
+                  <p data-i18n="svc_5_desc">যুক্তরাজ্যে বসেই বাংলাদেশে অবস্থিত জমি-জমা সংক্রান্ত জটিলতা নিরসন, সম্পত্তি
+                    উদ্ধার ও সুরক্ষায় প্রয়োজনীয় আইনি ও প্রশাসনিক সহযোগিতা।</p>
                 </div>
               </div>
               <div class="header-right-cluster">
@@ -2013,17 +2247,22 @@
                   <h5><i class="fa-solid fa-circle-check text-success me-2"></i><span
                       data-i18n="drawer_benefits_head">এই সেবায় যা যা সুবিধা পাবেন:</span></h5>
                   <ul>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p1">লন্ডনে বসেই দেশের পৈতৃক বা কেনা জমির খতিয়ান ও পর্চা যাচাই।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p2">জমি নিয়ে ঝামেলা বা দখল সংক্রান্ত বিরোধে সঠিক আইনি পদক্ষেপ।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p3">ওয়ারিশান সম্পত্তি বণ্টন ও বণ্টননামা দলিল সংক্রান্ত সঠিক পরামর্শ।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p4">বাংলাদেশ সুপ্রিম কোর্ট ও জেলা আদালতের অভিজ্ঞ আইনজীবীদের সমন্বয়।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p1">লন্ডনে বসেই দেশের পৈতৃক বা কেনা
+                        জমির খতিয়ান ও পর্চা যাচাই।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p2">জমি নিয়ে ঝামেলা বা দখল সংক্রান্ত
+                        বিরোধে সঠিক আইনি পদক্ষেপ।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p3">ওয়ারিশান সম্পত্তি বণ্টন ও বণ্টননামা
+                        দলিল সংক্রান্ত সঠিক পরামর্শ।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_5_p4">বাংলাদেশ সুপ্রিম কোর্ট ও জেলা
+                        আদালতের অভিজ্ঞ আইনজীবীদের সমন্বয়।</span></li>
                   </ul>
                 </div>
                 <div class="drawer-cta-card">
                   <div class="small text-muted mb-2" data-i18n="svc_5_chat_prompt">দেশের জমিজমা নিয়ে পরামর্শ চান?</div>
                   <a href="https://wa.me/447885561722?text=Assalamu%20Alaikum,%20I%20need%20legal%20advice%20regarding%20property%20in%20Bangladesh%20from%20UK%20Bangla%20Community%20Services."
                     target="_blank" rel="noopener" class="btn-drawer-wa">
-                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_5_chat_btn">দেশের জমিজমা নিয়ে কথা বলুন</span>
+                    <i class="fa-brands fa-whatsapp"></i> <span data-i18n="svc_5_chat_btn">দেশের জমিজমা নিয়ে কথা
+                      বলুন</span>
                   </a>
                 </div>
               </div>
@@ -2037,7 +2276,8 @@
                 <div class="svc-icon-badge"><i class="fa-solid fa-language"></i></div>
                 <div class="svc-title-text">
                   <h3 data-i18n="svc_6_title">৬. ইউকে সার্টিফাইড অনুবাদ (UK Certified Translation)</h3>
-                  <p data-i18n="svc_6_desc">সকল ধরনের বাংলা কাগজপত্রের ইউকে সার্টিফাইড ট্রান্সলেটর (UK Certified Translator) দ্বারা অত্যন্ত সুলভ মূল্যে ও দ্রুততম সময়ে অনুবাদ সম্পন্ন করার সুবিধা।</p>
+                  <p data-i18n="svc_6_desc">সকল ধরনের বাংলা কাগজপত্রের ইউকে সার্টিফাইড ট্রান্সলেটর (UK Certified
+                    Translator) দ্বারা অত্যন্ত সুলভ মূল্যে ও দ্রুততম সময়ে অনুবাদ সম্পন্ন করার সুবিধা।</p>
                 </div>
               </div>
               <div class="header-right-cluster">
@@ -2052,10 +2292,14 @@
                   <h5><i class="fa-solid fa-circle-check text-success me-2"></i><span
                       data-i18n="drawer_benefits_head">এই সেবায় যা যা সুবিধা পাবেন:</span></h5>
                   <ul>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p1">নিকাহনামা, জন্ম সনদ, মৃত্যু সনদ ও পুলিশ ক্লিয়ারেন্সের অফিশিয়াল অনুবাদ।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p2">জমির দলিল, পর্চা, খতিয়ান ও আদালতের রায়ের প্রফেশনাল অনুবাদ।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p3">হোম অফিস, কোর্ট, কাউন্সিল ও পাসপোর্ট অফিসে শতভাগ গ্রহণযোগ্য।</span></li>
-                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p4">জরুরি প্রয়োজনে মাত্র ২৪ থেকে ৪৮ ঘণ্টার মধ্যে অনুবাদ ডেলিভারি।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p1">নিকাহনামা, জন্ম সনদ, মৃত্যু সনদ ও
+                        পুলিশ ক্লিয়ারেন্সের অফিশিয়াল অনুবাদ।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p2">জমির দলিল, পর্চা, খতিয়ান ও আদালতের
+                        রায়ের প্রফেশনাল অনুবাদ।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p3">হোম অফিস, কোর্ট, কাউন্সিল ও
+                        পাসপোর্ট অফিসে শতভাগ গ্রহণযোগ্য।</span></li>
+                    <li><i class="fa-solid fa-check"></i> <span data-i18n="svc_6_p4">জরুরি প্রয়োজনে মাত্র ২৪ থেকে ৪৮
+                        ঘণ্টার মধ্যে অনুবাদ ডেলিভারি।</span></li>
                   </ul>
                 </div>
                 <div class="drawer-cta-card">
@@ -2082,7 +2326,8 @@
               আমরা কাজ করি <span class="highlight-badge">আন্তরিকতার সাথে</span>, পরিবারের মতো
             </h2>
             <p class="text-secondary" style="font-size:1.02rem; line-height:1.75;" data-i18n="whyus_main_desc">
-              যুক্তরাজ্যের আইনি ও সরকারি নিয়মকানুন জটিল মনে হতে পারে। UK Bangla Community Services-এর লক্ষ্য—আপনি যেন অহেতুক পেরেশানি ছাড়াই আপনার ন্যায্য অধিকার ও নাগরিক সুবিধা পেতে পারেন।
+              যুক্তরাজ্যের আইনি ও সরকারি নিয়মকানুন জটিল মনে হতে পারে। UK Bangla Community Services-এর লক্ষ্য—আপনি যেন
+              অহেতুক পেরেশানি ছাড়াই আপনার ন্যায্য অধিকার ও নাগরিক সুবিধা পেতে পারেন।
             </p>
 
             <div class="metric-boxes-row">
@@ -2105,7 +2350,8 @@
 
             <div>
               <a href="#contact" class="btn-gold-consult">
-                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn_book_consult">পরামর্শের জন্য সময় ঠিক করুন</span>
+                <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btn_book_consult">পরামর্শের জন্য সময় ঠিক
+                  করুন</span>
               </a>
             </div>
           </div>
@@ -2113,7 +2359,8 @@
           <div>
             <div class="glass-card steps-card-container">
               <div class="steps-card-header">
-                <i class="fa-solid fa-list-ol text-success"></i> <span data-i18n="steps_card_title">সেবা নেওয়ার সহজ ৩টি ধাপ:</span>
+                <i class="fa-solid fa-list-ol text-success"></i> <span data-i18n="steps_card_title">সেবা নেওয়ার সহজ ৩টি
+                  ধাপ:</span>
               </div>
 
               <div class="steps-list-items">
@@ -2154,14 +2401,16 @@
           <span class="section-tag" data-i18n="team_section_tag">আমাদের টিম</span>
           <h2 class="section-title" data-i18n="team_section_title">যাঁদের উপর ভরসা রাখেন <span
               class="highlight-badge">হাজারো পরিবার</span></h2>
-          <p class="section-subtitle" data-i18n="team_section_subtitle">UK Bangla Community Services-এর প্রতিটি সদস্য আপনার কাজটিকে নিজের মনে করে দায়িত্বের সাথে দেখাশোনা করেন।</p>
+          <p class="section-subtitle" data-i18n="team_section_subtitle">UK Bangla Community Services-এর প্রতিটি সদস্য
+            আপনার কাজটিকে নিজের মনে করে দায়িত্বের সাথে দেখাশোনা করেন।</p>
         </div>
 
         <div class="team-grid-real">
           <!-- Member 1 -->
           <div class="glass-card team-card-real">
             <div class="team-photo-wrap">
-              <img src="assets/img/team-leader.jpg" alt="Dr. Kadir Siddiqui Senior Executive UK Bangla Community Services" loading="lazy"
+              <img src="assets/img/team-leader.jpg"
+                alt="Dr. Kadir Siddiqui Senior Executive UK Bangla Community Services" loading="lazy"
                 onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80'">
               <span class="team-experience-tag">সিনিয়র এক্সিকিউটিভ</span>
             </div>
@@ -2169,10 +2418,12 @@
               <h3 data-i18n="member_1_name">ড. কাদির সিদ্দিকী</h3>
               <span class="team-role-text" data-i18n="member_1_role">সিনিয়র এক্সিকিউটিভ</span>
               <p class="team-desc-text" data-i18n="member_1_bio">
-                যুক্তরাজ্যের আইন, ভিসা ও কমিউনিটি কাজে দীর্ঘদিনের বাস্তব অভিজ্ঞতা। প্রবাসীদের প্রতিটি কেস অত্যন্ত যত্নসহকারে দেখেন।
+                যুক্তরাজ্যের আইন, ভিসা ও কমিউনিটি কাজে দীর্ঘদিনের বাস্তব অভিজ্ঞতা। প্রবাসীদের প্রতিটি কেস অত্যন্ত
+                যত্নসহকারে দেখেন।
               </p>
               <a href="#contact" class="btn-team-consult">
-                <i class="fa-solid fa-calendar-check text-primary"></i> <span data-i18n="member_consult_btn">সরাসরি কথা বলুন</span>
+                <i class="fa-solid fa-calendar-check text-primary"></i> <span data-i18n="member_consult_btn">সরাসরি কথা
+                  বলুন</span>
               </a>
             </div>
           </div>
@@ -2180,8 +2431,8 @@
           <!-- Member 2 -->
           <div class="glass-card team-card-real">
             <div class="team-photo-wrap">
-              <img src="assets/img/team-consultant.jpg" alt="Mosharraf Hossain Senior Executive UK Bangla Community Services"
-                loading="lazy"
+              <img src="assets/img/team-consultant.jpg"
+                alt="Mosharraf Hossain Senior Executive UK Bangla Community Services" loading="lazy"
                 onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'">
               <span class="team-experience-tag">সিনিয়র এক্সিকিউটিভ</span>
             </div>
@@ -2192,7 +2443,8 @@
                 ভিসা এক্সটেনশন, ইউনিভার্সাল ক্রেডিট ও পিআইপির জটিল কাজগুলো সহজে সমাধান করতে বিশেষভাবে পারদর্শী।
               </p>
               <a href="#contact" class="btn-team-consult">
-                <i class="fa-solid fa-calendar-check text-success"></i> <span data-i18n="member_consult_btn">সরাসরি কথা বলুন</span>
+                <i class="fa-solid fa-calendar-check text-success"></i> <span data-i18n="member_consult_btn">সরাসরি কথা
+                  বলুন</span>
               </a>
             </div>
           </div>
@@ -2200,7 +2452,8 @@
           <!-- Member 3 -->
           <div class="glass-card team-card-real">
             <div class="team-photo-wrap">
-              <img src="assets/img/office-interior.jpg" alt="UK Bangla Community Services Legal & Documentation Team London" loading="lazy"
+              <img src="assets/img/office-interior.jpg"
+                alt="UK Bangla Community Services Legal & Documentation Team London" loading="lazy"
                 onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80'">
               <span class="team-experience-tag">ডকুমেন্টেশন ও আইনি দল</span>
             </div>
@@ -2211,7 +2464,8 @@
                 পাসপোর্ট, এনআইডি, পাওয়ার অব অ্যাটর্নি, সার্টিফাইড অনুবাদ ও হজ-ওমরাহ্ সেবায় সার্বক্ষণিক নিয়োজিত দক্ষ টিম।
               </p>
               <a href="#contact" class="btn-team-consult">
-                <i class="fa-solid fa-calendar-check text-danger"></i> <span data-i18n="member_consult_btn">টিমের সাথে যোগাযোগ</span>
+                <i class="fa-solid fa-calendar-check text-danger"></i> <span data-i18n="member_consult_btn">টিমের সাথে
+                  যোগাযোগ</span>
               </a>
             </div>
           </div>
@@ -2226,14 +2480,17 @@
           <div class="text-center" style="max-width:680px; margin:0 auto;">
             <span class="highlight-badge green mb-2" data-i18n="contact_badge">সহজ যোগাযোগ</span>
             <h2 class="text-white mt-2" data-i18n="contact_title">কী বিষয়ে সাহায্য চান? আমাদের লিখে পাঠান</h2>
-            <p class="text-light opacity-75" data-i18n="contact_subtitle">নিচের ফর্মটি পূরণ করে বাটনে চাপ দিলে সরাসরি UK Bangla Community Services-এর হোয়াটসঅ্যাপে মেসেজ চলে আসবে। আমরা দ্রুত উত্তর দেব।</p>
+            <p class="text-light opacity-75" data-i18n="contact_subtitle">নিচের ফর্মটি পূরণ করে বাটনে চাপ দিলে সরাসরি UK
+              Bangla Community Services-এর হোয়াটসঅ্যাপে মেসেজ চলে আসবে। আমরা দ্রুত উত্তর দেব।</p>
           </div>
 
           <div class="contact-split-grid">
             <!-- Form -->
             <div class="form-container-box">
-              <h3><i class="fa-brands fa-whatsapp text-success"></i> <span data-i18n="form_heading">সরাসরি হোয়াটসঅ্যাপে লিখুন</span></h3>
-              <p class="small text-muted mb-3" data-i18n="form_subheading">UK Bangla Community Services-এর একজন প্রতিনিধি আপনার মেসেজ পেয়ে দ্রুত যোগাযোগ করবেন।</p>
+              <h3><i class="fa-brands fa-whatsapp text-success"></i> <span data-i18n="form_heading">সরাসরি হোয়াটসঅ্যাপে
+                  লিখুন</span></h3>
+              <p class="small text-muted mb-3" data-i18n="form_subheading">UK Bangla Community Services-এর একজন
+                প্রতিনিধি আপনার মেসেজ পেয়ে দ্রুত যোগাযোগ করবেন।</p>
 
               <form id="contactFormWa" novalidate>
                 <div class="form-unit">
@@ -2262,7 +2519,8 @@
                 </div>
 
                 <button type="submit" class="btn-submit-action">
-                  <i class="fa-brands fa-whatsapp fa-xl"></i> <span data-i18n="form_btn_send">হোয়াটসঅ্যাপে মেসেজ পাঠান</span>
+                  <i class="fa-brands fa-whatsapp fa-xl"></i> <span data-i18n="form_btn_send">হোয়াটসঅ্যাপে মেসেজ
+                    পাঠান</span>
                 </button>
 
                 <div id="formErrorFeedback" class="alert alert-danger py-2 mt-3 small text-center" style="display:none;"
@@ -2327,7 +2585,8 @@
           </div>
           <div class="footer-company-slogan" data-i18n="footer_slogan_tag">TOGETHER FOR A BRIGHTER FUTURE</div>
           <p class="footer-slogan-desc" data-i18n="footer_about_text">
-            যুক্তরাজ্যে বসবাসরত প্রবাসী বাংলাদেশি পরিবারের যেকোনো প্রয়োজনে UK Bangla Community Services আছে বিশ্বস্ত সহযোগী হিসেবে।
+            যুক্তরাজ্যে বসবাসরত প্রবাসী বাংলাদেশি পরিবারের যেকোনো প্রয়োজনে UK Bangla Community Services আছে বিশ্বস্ত
+            সহযোগী হিসেবে।
           </p>
         </div>
 
